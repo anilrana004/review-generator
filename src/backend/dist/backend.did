@@ -1,0 +1,39 @@
+type http_request_result = 
+ record {
+   body: blob;
+   headers: vec http_header;
+   status: nat;
+ };
+type http_header = 
+ record {
+   name: text;
+   value: text;
+ };
+type TransformationOutput = 
+ record {
+   body: blob;
+   headers: vec http_header;
+   status: nat;
+ };
+type TransformationInput = 
+ record {
+   context: blob;
+   response: http_request_result;
+ };
+type ReviewResult = 
+ variant {
+   err: text;
+   ok: text;
+ };
+type Rating = nat;
+type BusinessType = 
+ variant {
+   Cafe;
+   OnlineBrand;
+   SaaS;
+ };
+service : {
+  generateReview: (businessType: BusinessType, rating: Rating) ->
+   (ReviewResult);
+  transform: (input: TransformationInput) -> (TransformationOutput) query;
+}

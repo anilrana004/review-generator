@@ -1,0 +1,22 @@
+{
+  "overview": "A review generator web app that uses AI to produce realistic, human-sounding customer reviews. Users select a business type (Café, Online Coffee Brand, or SaaS/Tech Product) and a star rating (1–5 stars), then generate a ready-to-use review they can copy and paste anywhere.",
+  "features": [
+    "3 business type personas: Café, Online Coffee Brand, SaaS/Tech Product",
+    "Star rating picker (1–5) with tone-matched review generation",
+    "AI-generated reviews following strict human-sounding writing rules",
+    "Copy-to-clipboard with confirmation feedback",
+    "Generate Again button for instant variations",
+    "Loading and error states for a smooth experience",
+    "Fully responsive mobile and desktop layout"
+  ],
+  "category": "productivity",
+  "tags": [
+    "ai",
+    "review-generator",
+    "coffee",
+    "saas",
+    "productivity",
+    "http-outcalls"
+  ],
+  "last_updated": "2026-04-27T02:29:12.987Z"
+}
